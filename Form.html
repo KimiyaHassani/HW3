@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+      <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+<h2>Movie</h2>
+
+<!-- return set to false to prevent default form submission to a URL -->
+<form name = "mainFrom" onsubmit="return false">
+
+	<fieldset id="movie">
+   
+    <legend>Rating Movie</legend>
+   <label for="movie1"> Movie's Name:</label> 
+    <input name="movie1" id="movie1" />
+    
+    <label for="rate">Rate:</label>
+    <input name="rate" id="rate" />
+    
+     <label for="year">Year:</label>
+    <input name="year" id="year" />
+      <br>
+
+
+      <!-- here we submit to a local js file -->
+    <input type="Add Movie" value="Add Movie" onclick="formSubmitEvent()">
+    
+    
+
+</form>
+<br><br><br>
+<button type="button" id="show">Show All</button>
+<textarea rows="10" cols="60" id="output" ></textarea>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
